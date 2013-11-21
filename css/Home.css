@@ -49,10 +49,10 @@ dd{height:0px;overflow:hidden;width:440px}
 .carousel_item{position: absolute; top: 0; left: 0; display: block; transition: opacity 1.5s; opacity: 0;background-size: cover; height:100%;width: 100%; background-position: center;}
 .visible{opacity: 1;}
 
-.z1 {z-index: 1; background-image: url(Images\Plant.jpg);}
-.z2 {z-index: 2; background-image: url(Images\Nuke.jpg);}
-.z3 {z-index: 3; background-image: url(Images\PIRATES.jpg);}
-.z4 {z-index: 4; background-image: url(Images\Lion.jpg);}
+.z1 {z-index: 1; background-image: url(../Images/Plant.jpg);}
+.z2 {z-index: 2; background-image: url(../Images/Nuke.jpg);}
+.z3 {z-index: 3; background-image: url(../Images/PIRATES.jpg);}
+.z4 {z-index: 4; background-image: url(../Images/Lion.jpg);}
 
 @media only screen and (max-device-width : 768px) {
 	.carousel_item{background-size: auto 100%;}
