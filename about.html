@@ -8,22 +8,24 @@
 				width: 800px;
 				margin: 0 auto;
 				color: #343434;
-
+				font-family: 'Droid Serif', serif;
 			}
 
 				a{
 					text-decoration: none;
-					color: black;
+					color: #696969;
 				}
 
 				a:hover{
-					color: white;
+					color: black;
 				}
 				
 				.nav{
 					display: inline-block;
 
 				}
+
+				
 
 
 				ul li{
@@ -44,21 +46,60 @@
 					background-color: #A9A9A9
 				}
 
-				.greetings{
-					padding-top: 2em;
+				.greetings{										
+					margin: 0 auto;
+					text-align: center;	
+					padding-top: 4em;				
+				}
+
+				.greetings_1{
 					width: 50%;
-					margin: 0 auto;					
+					margin: 12 auto 0;
+					padding-top: 5;
+					font-size: 48px;
 				}
 
 				.greetings_2{
 					width: 50%;
 					margin: 0 auto;
+					font-size: 32px;
+
+				}
+
+				
+				.footer{
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					padding-right: 4em;
+					padding-bottom: 1em;
+				}
+
+				.column_container{
+					position: relative;
+					width: 800px;
+					margin: 3em auto;
+					text-align: center;
+					padding-top: 10em;
+				}
+
+				#column2{
+					position: absolute;
+					top:0;
+					right: 0;
+					width:350px;
+				}
+
+				#column1{
+					position: absolute;
+					top:0;
+					left:0;
+					width:350px;
 				}
 
 
-
-
-			</style>		
+			</style>
+			<link href='http://fonts.googleapis.com/css?family=Signika+Negative|Droid+Serif' rel='stylesheet' type='text/css'>
 		</head>
 		<body>
 		<div class="nav">
@@ -68,23 +109,28 @@
 				</ul>
 		</div>
 				
-			<div>
-				<h1 class="greetings">
+			<div class="greetings">
+				<h1 class="greetings_1">
 					Hello!!
 				</h1>
 				<p class="greetings_2">My name is Daniel Widi and welcome to my portfolio.</p>
 			</div>	
-			<div>
-				<h2>About Me</h2>
+			
+			
+			
+			<div class="column_container">
+				<div id="column1">
+					<h2>About Me</h2>
+					<p>My name is Daniel Widi. I'm twenty-one years old, residing in Woodstock, Georgia and attending the Kennesaw State University's school for Continuing Education and Professionalism. I am going to ides to work on furthering my skills at becoming competent in the fields of web design.</p>
+				</div>				
+				<div id="column2">
+					<h2>What Can I Do for You?</h2>
+					<p>Hopefully you are browsing this web page in hopes of finding the person you think should design your web site, though if you're just on here for fun thats cool too. If you find that my services are adequate enough for you to want to hire me, then I can assure you that I will bring a plethora of services which will be available to you. Whether it be conceptualizing or designing an idea, or more along the lines of coding and maintaining; I will bee able to assist you in whatever you need.</p>
+				</div>
 			</div>
-			<span>My name is Daniel Widi. I'm twenty-one years old, residing in Woodstock, Georgia and attending the Kennesaw State University's school for Continuing Education and Professionalism. I am going to classes to work on furthering my skills at becoming competent in the fields of web design.</span>
-			<div>
-				<h2>What Can I Do for You?</h2>
-			</div>
-			<span>Hopefully you are browsing this web page in hopes of finding the person you think should design your web site, though if you're just on here for fun thats cool too. If you find that my services are adequate enough for you to want to hire me, then I can assure you that i will bring a plethora of services which will be available to you. Whether it be conceptualizing or designing an idea, or more along the lines of coding and maintaining; I will bee able to assist you in whatever you need.</span>
 		</body>
 		<footer>
-			<div> 
+			<div class="footer"> 
 				<a href="#"> &copy; Daniel Widi </a> &middot; <a href="#"> Privacy</a> &middot; <a href="#"> Terms </a>
 			</div>
 		</footer>
