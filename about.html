@@ -22,13 +22,12 @@
 				
 				.nav{
 					display: inline-block;
-
 				}
 
 				
 
 
-				ul li{
+				.nav_btn{
 					float: left;
 					padding: 0 6em;
 					margin: 0em 0em;
@@ -42,7 +41,7 @@
 					-webkit-transition: background .3s ease-in-out;
 				}
 
-				ul li:hover{
+				.nav_btn:hover{
 					background-color: #A9A9A9
 				}
 
@@ -95,13 +94,10 @@
 					margin: .5em auto;
 					text-align: center;
 					padding-top: 10em;
-					padding-bottom: 15em;
+					padding-bottom: 30em;
 				}
 
-				#dropdown2{
-					display: none;
-				}
-
+				
 				#column2{
 					position: absolute;
 					top:0;
@@ -114,14 +110,7 @@
 					top:0;
 					left:0;
 					width:350px;
-				}
-
-				.item1{
-					display: 1none;
-				}
-				.item2{
-					display: 1none;
-				}
+				}					
 
 			</style>
 			<link href='http://fonts.googleapis.com/css?family=Signika+Negative|Droid+Serif' rel='stylesheet' type='text/css'>
@@ -130,13 +119,22 @@
 		<body>
 		<div class="nav">
 				<ul>
-					<a href="../Project1/index.html" class="nav_link_home"><li id="btn1">Home</li></a>
+					<a href="../Project1/index.html" class="nav_link_home"><li class="nav_btn" id="btn1">Home</li></a>
 
-					<a href="#" class="nav_link_contact"><li class="btn2">Contact</li></a>
-						<ul class="items">
-							<li class="item1">item1</li>
-							<li class="item2">item2</li>
-						</ul>
+					<a href="#" class="nav_link_contact">
+						<li class="nav_btn" id="btn2">Contact
+							<ul class="items">
+								<a href="#">
+									<li class="dropdown_btn" id="item1"> Item1
+									</li>
+								</a>
+								<a href="#"> 
+									<li class="dropdown_btn" id="item2"> Item2
+									</li>
+								</a>
+							</ul>
+						</li>
+					</a>
 				</ul>
 		</div>
 				
@@ -163,13 +161,17 @@
 			<script>
 
 			$(function() {
-				$('.btn2').hover(function(){
-					$('.item1').slideToggle(500,function(){
-						$('.item2')slideToggle(1000)
+				$('#item1, #item2').toggle();
+				$('#btn2').hover(function(){
+					$('#item1').slideToggle(750, function(){
+						$('#item2').slideToggle(1000);
+					});
+				},function(){
+					$('#item2').slideToggle(1000, function(){
+						$('#item1').slideToggle(750);
 					});
 				});
 			});
-
 			</script>
 		</body>
 		<footer>
