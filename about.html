@@ -4,19 +4,19 @@
 			<style>
 
 			body{
-				background-color: #DCDCDC; 
+				background-image: url(../Project1/images/City.jpg);
+				background-color: black;
+				background-size: cover;
+				background-position: center center;
+				background-color: transparent;				
 				width: 800px;
 				margin: 0 auto;
-				color: #343434;
+				color: white;
 				font-family: 'Droid Serif', serif;
 			}
 
 				a{
 					text-decoration: none;
-					color: black;
-				}
-
-				a:hover{
 					color: white;
 				}
 				
@@ -33,7 +33,7 @@
 					padding: 0 6em;
 					margin: 0em 0em;
 					font-size: 24px;
-					background: #696969;
+					background: black;
 					color: white;
 					display: block;
 					line-height: 100px;
@@ -68,14 +68,25 @@
 
 				
 				.footer{
-					position: absolute;
+					position: fixed;
 					right: 10em;
 					bottom: 0;
 					padding-right: 1em;
 					padding-bottom: 1em;
 					padding-top: 1em;
-					padding-left: 50em;
-					background: #696969;
+					padding-left: 43.5em;
+					background: black;
+				}
+
+				.footer_btn{
+					background: black;
+					padding: 1em;
+				}
+
+				.footer_btn:hover{
+					background-color: #A9A9A9;
+					transition: background .3s ease-in-out;
+					-webkit-transition: background .3s ease-in-out;
 				}
 
 				.column_container{
@@ -84,6 +95,11 @@
 					margin: .5em auto;
 					text-align: center;
 					padding-top: 10em;
+					padding-bottom: 15em;
+				}
+
+				#dropdown2{
+					display: none;
 				}
 
 				#column2{
@@ -100,15 +116,27 @@
 					width:350px;
 				}
 
+				.item1{
+					display: 1none;
+				}
+				.item2{
+					display: 1none;
+				}
 
 			</style>
 			<link href='http://fonts.googleapis.com/css?family=Signika+Negative|Droid+Serif' rel='stylesheet' type='text/css'>
+
 		</head>
 		<body>
 		<div class="nav">
 				<ul>
-					<a href="../Project1/index.html" class="nav_link_home"><li>Home</li></a>
-					<a href="#" class="nav_link_contact"><li>Contact</li></a>
+					<a href="../Project1/index.html" class="nav_link_home"><li id="btn1">Home</li></a>
+
+					<a href="#" class="nav_link_contact"><li class="btn2">Contact</li></a>
+						<ul class="items">
+							<li class="item1">item1</li>
+							<li class="item2">item2</li>
+						</ul>
 				</ul>
 		</div>
 				
@@ -131,10 +159,22 @@
 					<p>Hopefully you are browsing this web page in hopes of finding the person you think should design your web site, though if you're just on here for fun thats cool too. If you find that my services are adequate enough for you to want to hire me, then I can assure you that I will bring a plethora of services which will be available to you. Whether it be conceptualizing or designing an idea, or more along the lines of coding and maintaining; I will bee able to assist you in whatever you need.</p>
 				</div>
 			</div>
+			<script src="jquery.js"></script>
+			<script>
+
+			$(function() {
+				$('.btn2').hover(function(){
+					$('.item1').slideToggle(500,function(){
+						$('.item2')slideToggle(1000)
+					});
+				});
+			});
+
+			</script>
 		</body>
 		<footer>
 			<div class="footer"> 
-				<a href="#"> &copy; Daniel Widi </a> &middot; <a href="#"> Privacy</a> &middot; <a href="#"> Terms </a>
+				<a  href="#" class="footer_btn"> &copy; Daniel Widi </a> &middot; <a  href="#" class="footer_btn"> Privacy</a> &middot; <a  href="#" class="footer_btn"> Terms </a>
 			</div>
 		</footer>
 	</html>
