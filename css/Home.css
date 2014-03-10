@@ -14,8 +14,8 @@ img{display:block}
 #menu div{height:56px;background:#000;opacity:0.6;filter:alpha(opacity=60);padding:7px 0 0 7px}
 
 h1{position:relative;left:-141px;margin-bottom:-63px;width:140px;opacity:0.99}
-h1 a{padding:41px 10px 10px 0;color:#fff;background:#000 url(go.gif) 0 -30px repeat-x;font-size:11px;text-align:right;display:block}
-h1 a:hover{background:#000 url(go.gif) 0 43px repeat-x}
+h1 a{padding:41px 10px 10px 0;color:#fff;background:#000 url() 0 -30px repeat-x;font-size:11px;text-align:right;display:block}
+h1 a:hover{background:#000 url() 0 43px repeat-x}
 ul{float:left;width:110px}
 li a{height:12px;padding:0 5px;font-weight:bold;color:#999;display:block}
 li a:hover,li.cur a{color:#fff}
@@ -53,6 +53,8 @@ dd{height:0px;overflow:hidden;width:440px}
 .z2 {z-index: 2; background-image: url(../Images/Nuke.jpg);}
 .z3 {z-index: 3; background-image: url(../Images/PIRATES.jpg);}
 .z4 {z-index: 4; background-image: url(../Images/Lion.jpg);}
+
+
 
 @media only screen and (max-device-width : 768px) {
 	.carousel_item{background-size: auto 100%;}
